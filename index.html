@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function greeding() {
+            let name=prompt("Please input your name:");
+            window.alert('Hello '+name);
+            document.getElementById('demo').innerHTML='Hello '+name;
+        }
+        function changetored() {
+            document.getElementById('demo').style.color = 'red';
+            document.getElementById('demo').style.fontSize = '30px';
+        }
+        function changetomessi() {
+            document.getElementById('pic').src = "https://images.beinsports.com/NS9EpV8JJOXVyaTik0O_ShIJai4=/full-fit-in/1000x0/lionelmessi-cropped_1ucbgwkqhkl1e1ta8pn3uw54xm.jpg";
+        }
+        function changetoronaldo() {
+            document.getElementById('pic').src = "https://tmssl.akamaized.net/images/foto/galerie/cristiano-ronaldo-manchester-united-1636635187-74572.jpg?lm=1636635200";
+        }
+    </script>
 </head>
+
 <body>
-    <img src="https://www.blognone.com/sites/default/files/externals/489ba997588fa1cf41a542ea98b3de60.jpg" alt="Minecraft">
+
+    <h1>Best Player in the world</h1>
+    <h2>Who is the best player in the world?</h2>
+    <button type="button" onclick="greeding()">
+        Click me to Hello.</button>
+    <button type="button" onclick="changetored()">
+        Click me to Change to red.</button>
+    <button type="button" onclick="changetomessi()">
+        Click me to Change to messi.</button>
+    <button type="button" onclick="changetoronaldo()">
+        Click me to Change to ronaldo.</button>
+    <p id="demo"></p>
+    <img id='pic'
+        src="https://images.beinsports.com/NS9EpV8JJOXVyaTik0O_ShIJai4=/full-fit-in/1000x0/lionelmessi-cropped_1ucbgwkqhkl1e1ta8pn3uw54xm.jpg"
+        width="800em">
+    <!-- <img src="https://tmssl.akamaized.net/images/foto/galerie/cristiano-ronaldo-manchester-united-1636635187-74572.jpg?lm=1636635200"
+        alt="Minecraft" width="800em">
+    <img src="https://images.beinsports.com/NS9EpV8JJOXVyaTik0O_ShIJai4=/full-fit-in/1000x0/lionelmessi-cropped_1ucbgwkqhkl1e1ta8pn3uw54xm.jpg"
+        alt="Minecraft" width="800em"> -->
+
+
+
+
 </body>
+
 </html>
